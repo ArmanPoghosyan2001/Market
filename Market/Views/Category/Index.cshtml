@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Categories";
+}
+@model CategoryVM
+@foreach (var category in Model.categories)
+{
+    <a href="/Product/GetProductsByCategoryId/@category.Id">@category.CategoryName</a>
+    <br />
+}
