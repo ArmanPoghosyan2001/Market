@@ -1,8 +1,10 @@
 ﻿using Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace BussinesLogic
 {
@@ -10,20 +12,24 @@ namespace BussinesLogic
     {
         public List<ProductModel> GetProductsByCategoryId(int id)
         {
-            return CreateProducts().Where(x => x.CategoryId == id).ToList();
+            return ReadProducts().Where(x => x.CategoryId == id).ToList();
         }
-        private List<ProductModel> CreateProducts()
+        private List<ProductModel> ReadProducts()
         {
-            List<ProductModel> productModels = new List<ProductModel>();
-            productModels.Add(new ProductModel { CategoryId = 1, ProductId = 1, ProductName = "Sofa", Price = 150000, ProductInfo = "Sofa's Description" });
-            productModels.Add(new ProductModel { CategoryId = 1, ProductId = 2, ProductName = "Chairs", Price = 13000, ProductInfo = "Chairs' Description" });
-            productModels.Add(new ProductModel { CategoryId = 2, ProductId = 3, ProductName = "Spindle", Price = 1000, ProductInfo = "Spindle's Description" });
-            return productModels;
+            XmlSerializer serializer = new XmlSerializer(typeof(List<ProductModel>));
+            string path = @"C:\Users\B  A  R  E  V\source\repos\Market\Products.XML";
+            List<ProductModel> products = null;
+            using (FileStream fs = new FileStream(path, FileMode.Open))
+            {
+                products = (List<ProductModel>)serializer.Deserialize(fs);
+            }
+
+            return products;
         }
 
         public ProductModel GetProductByProductId(int id)
         {
-            return CreateProducts().Find(x => x.ProductId == id);
+            return ReadProducts().Find(x => x.ProductId == id);
         }
 
     }

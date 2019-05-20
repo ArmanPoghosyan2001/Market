@@ -11,6 +11,6 @@ namespace Models
         public string ProductName { get; set; }
         public int Price { get; set; }
         public string ProductInfo { get; set; }
-        //public string ProductImagePath { get; set; }
+        public string ProductImagePath { get; set; }
     }
 }

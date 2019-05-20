@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<ArrayOfProductModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductModel>
+    <ProductId>1</ProductId>
+    <CategoryId>1</CategoryId>
+    <ProductName>Sofa</ProductName>
+    <Price>150000</Price>
+    <ProductInfo>Sofa's Description</ProductInfo>
+	<ProductImagePath>C:\Users\B  A  R  E  V\source\repos\Market\Market\wwwroot\images\Sofa.Jpg</ProductImagePath>
+  </ProductModel>
+  <ProductModel>
+    <ProductId>2</ProductId>
+    <CategoryId>1</CategoryId>
+    <ProductName>Chairs</ProductName>
+    <Price>13000</Price>
+    <ProductInfo>Chairs' Description</ProductInfo>
+	<ProductImagePath>C:\Users\B  A  R  E  V\source\repos\Market\Market\wwwroot\images\Desk.Jpeg</ProductImagePath>
+  </ProductModel>
+  <ProductModel>
+    <ProductId>3</ProductId>
+    <CategoryId>2</CategoryId>
+    <ProductName>Spindle</ProductName>
+    <Price>1700</Price>
+    <ProductInfo>Spindle's Description</ProductInfo>
+	<ProductImagePath>C:\Users\B  A  R  E  V\source\repos\Market\Market\wwwroot\images\Desk.Jpeg</ProductImagePath>
+  </ProductModel>
+  <ProductModel>
+    <ProductId>4</ProductId>
+    <CategoryId>2</CategoryId>
+    <ProductName>Running</ProductName>
+    <Price>1200</Price>
+    <ProductInfo>Running's Description</ProductInfo>
+	<ProductImagePath>C:\Users\B  A  R  E  V\source\repos\Market\Market\wwwroot\images\Desk.Jpeg</ProductImagePath>
+  </ProductModel>
+  <ProductModel>
+    <ProductId>5</ProductId>
+    <CategoryId>2</CategoryId>
+    <ProductName>Tent</ProductName>
+    <Price>1500</Price>
+    <ProductInfo>Tent's Description</ProductInfo>
+	<ProductImagePath>C:\Users\B  A  R  E  V\source\repos\Market\Market\wwwroot\images\Desk.Jpeg</ProductImagePath>
+  </ProductModel>
+  <ProductModel>
+    <ProductId>6</ProductId>
+    <CategoryId>1</CategoryId>
+    <ProductName>Table</ProductName>
+    <Price>85000</Price>
+    <ProductInfo>Table's Description</ProductInfo>
+	<ProductImagePath>C:\Users\B  A  R  E  V\source\repos\Market\Market\wwwroot\images\Desk.Jpeg</ProductImagePath>
+  </ProductModel>
+  <ProductModel>
+    <ProductId>7</ProductId>
+    <CategoryId>1</CategoryId>
+    <ProductName>Desk</ProductName>
+    <Price>15000</Price>
+    <ProductInfo>Desk's Description</ProductInfo>
+	<ProductImagePath>C:\Users\B  A  R  E  V\source\repos\Market\Market\wwwroot\images\Desk.Jpeg</ProductImagePath>
+  </ProductModel>
+</ArrayOfProductModel>

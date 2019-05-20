@@ -3,10 +3,12 @@
     ViewData["Title"] = "GetProductsByCategoryId";
 }
 @model Market.Models.ProductsVM
-
+@*@section Header{ 
+    Market Created By ► Arman
+}*@
 <h2>Products</h2>
 
 @foreach (var products in Model.products)
 {
-    <a href="/Product/GetProductByProductId/@products.ProductId">@products.ProductName &nbsp; &nbsp; @products.Price <br /></a>
+<a href="/Product/GetProductByProductId/@products.ProductId"><img src="@products.ProductImagePath" alt="@products.ProductName"/><br />@products.ProductName &nbsp; &nbsp; @products.Price <br /></a>
 }
